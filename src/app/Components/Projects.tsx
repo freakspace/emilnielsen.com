@@ -1,6 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-
 const Projects = () => {
   return (
     <div className="bg-black py-20 md:py-40 px-4">
