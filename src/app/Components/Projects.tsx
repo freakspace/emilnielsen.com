@@ -10,8 +10,7 @@ const Projects = () => {
             Projekter
           </h2>
           <p className="text-white text-lg md:text-xl md:w-1/4 mt-4">
-            Dette er en random tekst jeg udfylder senere, blot for at vise at
-            teksten ser pæn ud.
+            Dette er blot et mindre udpluk af mine personlige projekter
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -21,8 +20,8 @@ const Projects = () => {
                 Bjørn Art
               </h3>
               <p className="mb-3 text-white">
-                Website udviklet i Django med integrering til Stripe, custom
-                checkout-flow, kunde self-service og meget mere.
+                Et Django-website med Stripe-integration, tilpasset
+                checkout-flow og self-service for kunderne.
               </p>
               <button className="px-4 py-2 mt-4 text-md border-2 border-white bg-transparent text-white font-bold hover:bg-white hover:text-black transition duration-400 hover:ease-in">
                 VIS
@@ -35,8 +34,9 @@ const Projects = () => {
                 DrypDryp
               </h3>
               <p className="text-white mb-3">
-                Affiliate website med integrering til Stripe, sync a produkter
-                fra affiliate partnere, custom admin backend m.f.
+                Django affiliate-website med Stripe-integration, produkt
+                synkronisering fra affiliate partnere og en tilpasset admin
+                backend.
               </p>
               <button className="px-4 py-2 mt-4 text-md border-2 border-white bg-transparent text-white font-bold hover:bg-white hover:text-white transition duration-400 hover:ease-in">
                 VIS

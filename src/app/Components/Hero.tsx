@@ -2,17 +2,19 @@
 import React, { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [buttonText, setButtonText] = useState("KONTAKT");
   const [stacks, setStacks] = useState([
     "Python",
     "TypeScript",
-    "JavaScript",
     "Django",
     "Next.js",
     "API",
+    "JavaScript",
+    "REST",
     "Jira",
     "Tailwind",
-    "Bootstrap",
     "Blockchain",
+    "Bootstrap",
   ]);
 
   useEffect(() => {
@@ -24,6 +26,10 @@ const Hero = () => {
     }, 1000);
     return () => clearInterval(intervalId);
   }, [stacks]);
+
+  const changeText = () => {
+    setButtonText("HEJ@EMILNIELSEN.COM");
+  };
 
   return (
     <section className="py-20 md:py-48 px-4">
@@ -42,8 +48,11 @@ const Hero = () => {
           <br />
           <span className="font-bold"> {stacks[0]}</span>
         </h3>
-        <button className="px-4 py-2 mt-4 text-2xl border-4 border-white bg-transparent text-white font-bold hover:bg-white hover:text-black transition duration-400 hover:ease-in">
-          KONTAKT
+        <button
+          onClick={changeText}
+          className="px-4 py-2 mt-4 text-2xl border-4 border-white bg-transparent text-white font-bold hover:bg-white hover:text-black transition duration-400 hover:ease-in"
+        >
+          {buttonText}
         </button>
       </div>
     </section>

@@ -8,8 +8,9 @@ const Stack = () => {
         <div className="mb-8">
           <h2 className="text-5xl md:text-7xl font-extrabold">Stack</h2>
           <p className="text-lg md:text-xl md:w-1/4 mt-4">
-            4 års erfaring med udvikling af Python, fra webscraping, scripts til
-            full-stack web-applikationer.
+            Med fire års intensiv erfaring i programmering har jeg arbejdet med
+            en bred vifte af projekter, lige fra webscraping og scriptudvikling
+            til opbygning af avancerede full-stack webapplikationer.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -33,8 +34,9 @@ const Stack = () => {
                     />
                   </div>
                   <p className="mb-3">
-                    4 års erfaring med udvikling af Python, fra webscraping,
-                    scripts til full-stack web-applikationer.
+                    Min erfaring med Python er meget alsidig og omfatter alt fra
+                    udvikling af mindre scripts og Discord-bots til
+                    programmering af større webshops.
                   </p>
                 </div>
               </Link>
@@ -53,8 +55,9 @@ const Stack = () => {
                     />
                   </div>
                   <p className="mb-3">
-                    2 års erfaring med udvikling af TypeScript webapplicationer,
-                    fra single-site til browserspil.
+                    Min erfaring med TypeScript spænder sig fra at gøre django
+                    applikationer dynamiske til udvkling af komplette full-stack
+                    next.js løsninger
                   </p>
                 </div>
               </Link>
@@ -79,8 +82,9 @@ const Stack = () => {
                     />
                   </div>
                   <p className="mb-3">
-                    3 års erfaring med udvikling af produktions-klare Django
-                    web-applikationer, primært indenfor e-commerce.
+                    I løbet af adskillige år med Django, har jeg udviklet en
+                    række websites, der spænder fra simple hjemmesider til
+                    komplekse e-commerce sites.
                   </p>
                 </div>
               </Link>
@@ -99,8 +103,9 @@ const Stack = () => {
                     />
                   </div>
                   <p className="mb-3">
-                    2 års erfaring med udvikling af TypeScript webapplicationer,
-                    fra single-site til browserspil.
+                    Med Next.js har jeg arbejdet med udvikling af højst
+                    dynamiske webapplikationer, hvor jeg effektivt har håndteret
+                    både frontend- og backend-opgaver.
                   </p>
                 </div>
               </Link>
