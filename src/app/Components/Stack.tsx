@@ -8,7 +8,7 @@ const Stack = () => {
         <div className="mb-8">
           <h2 className="text-5xl md:text-7xl font-extrabold">Stack</h2>
           <p className="text-lg md:text-xl md:w-1/4 mt-4">
-            Med fire års intensiv erfaring i programmering har jeg arbejdet med
+            Med flere års intensiv erfaring i programmering har jeg arbejdet med
             en bred vifte af projekter, lige fra webscraping og scriptudvikling
             til opbygning af avancerede full-stack webapplikationer.
           </p>
