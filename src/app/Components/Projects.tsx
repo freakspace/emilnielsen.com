@@ -26,6 +26,7 @@ const Projects = () => {
               href="https://bjornart.dk"
               className="inline-block px-4 py-2 mt-4 text-md border-2 border-white bg-transparent text-white font-bold hover:bg-white hover:text-black transition duration-400 hover:ease-in"
               target="_blank"
+              rel="noreferrer"
               title="Personlige Malerier & Portrætter"
             >
               BESØG
@@ -45,6 +46,7 @@ const Projects = () => {
                 href="https://drypdryp.dk"
                 className="inline-block px-4 py-2 mt-4 text-md border-2 border-white bg-transparent text-white font-bold hover:bg-white hover:text-black transition duration-400 hover:ease-in"
                 target="_blank"
+                rel="noreferrer"
                 title="Alt om kaffe"
               >
                 BESØG
