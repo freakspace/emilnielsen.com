@@ -1,6 +1,6 @@
 import "./globals.css";
-
-import Nav from "./Components/Nav";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function RootLayout({
   children,
@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="da">
+    <html lang="en">
       <head />
       <body>{children}</body>
     </html>
