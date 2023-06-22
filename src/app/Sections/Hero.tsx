@@ -4,7 +4,7 @@ import ButtonContact from "../Components/ButtonContact";
 
 const Hero = () => {
   return (
-    <section className="py-20 md:py-48 px-4 bg-black snap-always snap-center h-screen">
+    <section className="py-20 md:py-48 px-4 bg-black h-screen">
       <div className="flex items-center justify-center h-full container mx-auto">
         <div className="grid md:grid-cols-2">
           <div>
@@ -22,7 +22,7 @@ const Hero = () => {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/mig3.jpg"
+              src="/profilbillede_square.jpg"
               alt="Emil Nielsen"
               width={500}
               height={500}

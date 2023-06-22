@@ -1,8 +1,8 @@
 const Skills = () => {
   return (
-    <section className="flex items-center justify-center py-10 md:py-48 px-4 bg-black snap-always snap-center h-screen">
-      <div className="container mx-auto flex flex-col justify-between md:h-5/6">
-        <div className="md:w-3/6 md:self-start">
+    <section className="flex items-center justify-center px-4 bg-black">
+      <div className="container mx-auto flex flex-col justify-between">
+        <div className="md:w-3/6 md:self-start py-20">
           <h2 className="text-white text-4xl md:text-6xl font-bold mb-6">
             Fullstack Developer
           </h2>
@@ -14,7 +14,7 @@ const Skills = () => {
             open to acquiring new knowledge and skills.
           </p>
         </div>
-        <div className="md:w-3/6 md:self-end">
+        <div className="md:w-3/6 md:self-end py-20">
           <h2 className="text-white text-4xl md:text-6xl font-bold mb-6 mt-10 md:mt-0">
             Technical Project Manager
           </h2>

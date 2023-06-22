@@ -3,8 +3,7 @@ import Skills from "./Sections/Skills";
 import About from "./Sections/About";
 import Projects from "./Sections/Projects";
 import Work from "./Sections/Work";
-import WorkMid from "./Sections/WorkMid";
-import WorkEnd from "./Sections/WorkEnd";
+import Contact from "./Sections/Contact";
 
 const sections = [
   { name: "Hero", component: <Hero /> },
@@ -12,8 +11,7 @@ const sections = [
   { name: "About", component: <About /> },
   { name: "Projects", component: <Projects /> },
   { name: "Work", component: <Work /> },
-  { name: "WorkExtended", component: <WorkMid /> },
-  { name: "WorkEnd", component: <WorkEnd /> },
+  { name: "Contact", component: <Contact /> },
 ];
 
 export const metadata = {

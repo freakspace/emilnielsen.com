@@ -61,11 +61,11 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="flex items-center justify-center py-10 md:py-48 px-4 bg-black snap-always snap-center h-screen">
+    <section className="flex items-center justify-center py-10 md:py-48 px-4 bg-black">
       <div className="container mx-auto">
         <>
           <h2 className="text-white text-4xl md:text-6xl font-bold mb-10">
-            Projekter
+            Projects
           </h2>
           <ProjectSlider projects={projects} />
         </>
