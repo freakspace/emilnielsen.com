@@ -40,7 +40,7 @@ const Work = () => {
   return (
     <section className="py-10 md:py-48 px-4 bg-black">
       <div className="container mx-auto h-full">
-        <h2 className="text-white text-4xl md:text-6xl font-bold mb-10">
+        <h2 className="text-pink-700 text-4xl md:text-6xl font-bold mb-10">
           Experience
         </h2>
         {Experience.map((item, index) => (
