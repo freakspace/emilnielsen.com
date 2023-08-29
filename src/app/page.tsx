@@ -1,31 +1,172 @@
 import Hero from "./Sections/Hero";
-import Skills from "./Sections/Skills";
-import About from "./Sections/About";
-import Projects from "./Sections/Projects";
-import Work from "./Sections/Work";
-import Contact from "./Sections/Contact";
-
-const sections = [
-  { name: "Hero", component: <Hero /> },
-  { name: "Skills", component: <Skills /> },
-  { name: "About", component: <About /> },
-  { name: "Projects", component: <Projects /> },
-  { name: "Work", component: <Work /> },
-  { name: "Contact", component: <Contact /> },
-];
+import ProjectDeck from "./Components/ProjectDeck";
+import ContactDeck from "./Components/ContactDeck";
+import Upwork from "./Components/Upwork";
+import Stack from "./Components/Stack";
 
 export const metadata = {
-  title: "Emil Nielsen | Fullstack Developer & Technical Project Manager",
-  description:
-    "My name is Emil, and I'm a full-stack developer and technical IT project manager, with over 10 years of experience in the industry. Contact me today, and let's discuss how I can help you.",
+  title: "Portfolio | Emil Nielsen",
+  description: "",
 };
 
-export default function Home() {
+const HeroProps = {
+  subtitle: "My Portfolio",
+  title: "I Build Projects On Time & Within Budget",
+  description:
+    "I assist business professionals in managing their projects from initiation to closure in a timely manner",
+  imagePath: "/profilbillede_square.jpg",
+};
+
+const Projects = [
+  {
+    subtitle: "TurboTailer",
+    link: "https://turbotailer.io",
+    title: "Connects Stores With ChatGPT",
+    description:
+      "A full scale SaaS applications which enables storeowners to connect their store with ChatGPT, enabling their customers to chat with their products",
+    stack: ["Django", "React", "OpenAI", "LangChain", "Tailwind", "Django DRF"],
+    features: [
+      {
+        imagePath: "/bjornart.jpg",
+        caption: "Frontpage of DrypDryp",
+      },
+      {
+        imagePath: "/bjornart.jpg",
+        caption: "Product page with price history",
+      },
+    ],
+  },
+  {
+    subtitle: "Bjørn Art",
+    link: "https://bjornarts.com",
+    title: "Connects Customers With Artists Overseas",
+    description:
+      "A custom built e-commerce site using Django and bootstrap, with a highly dynamic pricing structure, 8 domains and integrated with Stripe",
+    stack: [
+      "Django",
+      "Python",
+      "JavaScript",
+      "Stripe",
+      "Bootstrap",
+      "Celery",
+      "Docker",
+    ],
+    features: [
+      {
+        imagePath: "/bjornart.jpg",
+        caption: "Frontpage",
+      },
+      {
+        imagePath: "/bjornart.jpg",
+        caption: "Frontpage",
+      },
+    ],
+  },
+  {
+    subtitle: "Dryp Dryp",
+    link: "https://drypdryp.dk",
+    title: "Affiliate Site With Daily Price Updates",
+    description:
+      "An affiliate site built using Django which automatically syncs products from external souces, as well as updates prices daily.",
+    stack: [
+      "Django",
+      "Python",
+      "JavaScript",
+      "Stripe",
+      "Bootstrap",
+      "Celery",
+      "Docker",
+    ],
+    features: [
+      {
+        imagePath: "/bjornart.jpg",
+        caption: "Frontpage of DrypDryp",
+      },
+      {
+        imagePath: "/bjornart.jpg",
+        caption: "Product page with price history",
+      },
+    ],
+  },
+  {
+    subtitle: "Refill",
+    link: "https://refill.dk",
+    title: "Personalized Coffee Subscription",
+    description:
+      "A coffee subscription services which connects customers to roasters depending on the customers individual preferences for coffee",
+    stack: [
+      "Django",
+      "Python",
+      "JavaScript",
+      "Stripe",
+      "Bootstrap",
+      "Celery",
+      "Docker",
+    ],
+    features: [
+      {
+        imagePath: "/bjornart.jpg",
+        caption: "Frontpage of DrypDryp",
+      },
+      {
+        imagePath: "/bjornart.jpg",
+        caption: "Product page with price history",
+      },
+    ],
+  },
+  {
+    subtitle: "Discord",
+    link: null,
+    title: "Custom Discord Bots",
+    description:
+      "Several custom built Discord bots such as a bank, casino, rafflestore and more. Been deployed in several communities with 10k+ members, and served over 50,000 transactions.",
+    stack: ["Django", "React", "OpenAI", "LangChain", "Tailwind", "Django DRF"],
+    features: [
+      {
+        imagePath: "/bjornart.jpg",
+        caption: "Frontpage of DrypDryp",
+      },
+      {
+        imagePath: "/bjornart.jpg",
+        caption: "Product page with price history",
+      },
+    ],
+  },
+];
+
+export default function Page() {
   return (
-    <div className="snap-y snap-mandatory h-screen w-screen overflow-y-scroll">
-      {sections.map((section, index) => (
-        <div key={index}>{section.component}</div>
+    <div className="h-screen w-screen">
+      <Hero props={HeroProps} />
+      <div className="flex flex-col items-center justify-center">
+        <div className="text-3xl font-bold text-center mb-2 text-blue-600">
+          Projects I&apos;ve Built
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2.5}
+          stroke="currentColor"
+          className="w-6 h-6 text-blue-600 animate-bounce"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"
+          />
+        </svg>
+      </div>
+
+      {Projects.map((project, id) => (
+        <>
+          <ProjectDeck project={project} key={id} />
+          {id === 0 ? <Upwork /> : null}
+          {id === 1 ? <Stack /> : null}
+          {id === 2 ? <ContactDeck /> : null}
+        </>
       ))}
+      <ContactDeck />
     </div>
   );
 }
