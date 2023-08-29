@@ -85,8 +85,8 @@ export default function Page() {
               <p className="text-white font-bold text-xl md:text-3xl mb-2">
                 Every project is different, and a well versed project manager
                 ensures that the plan is always tailored to the project at hand.
-                That's why I always make sure to tailor the project management
-                to each project.
+                That&apos;s why I always make sure to tailor the project
+                management to each project.
               </p>
             </div>
           </div>

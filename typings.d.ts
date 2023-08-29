@@ -17,3 +17,15 @@ export interface CallToActionLinkProps {
   href: string,
   text: string
 }
+
+export interface IProject {
+  subtitle: string;
+  link: string | null
+  title: string;
+  description: string;
+  stack: string[];
+  features: {
+    imagePath: string;
+    caption: string
+  }[];
+}

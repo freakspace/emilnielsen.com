@@ -11,7 +11,7 @@ const ButtonContact = () => {
   return (
     <button
       onClick={handleContact}
-      className="px-4 py-2 mb-10 text-2xl border-4 border-black bg-transparent text-black font-bold hover:bg-white hover:text-black transition duration-400 hover:ease-in"
+      className="px-4 py-2 mb-10 text-2xl border-4 rounded-3xl border-white bg-transparent text-white font-bold hover:bg-white hover:text-black transition duration-400 hover:ease-in"
     >
       {buttonText}
     </button>
