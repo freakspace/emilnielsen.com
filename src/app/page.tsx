@@ -27,12 +27,12 @@ const Projects = [
     stack: ["Django", "React", "OpenAI", "LangChain", "Tailwind", "Django DRF"],
     features: [
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Frontpage of DrypDryp",
+        imagePath: "/turbotailer-fp.jpg",
+        caption: "ChatGPT Powered E-Commerce Chat",
       },
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Product page with price history",
+        imagePath: "/turbotailer_regiter_onboarding.jpg",
+        caption: "Easy onboarding and integration with ecommerce",
       },
     ],
   },
@@ -53,12 +53,12 @@ const Projects = [
     ],
     features: [
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Frontpage",
+        imagePath: "/bjornart-frontpage.jpg",
+        caption: "Connects customer with artists overseas",
       },
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Frontpage",
+        imagePath: "/bjornart_form.jpg",
+        caption: "Dynamic product step-configuration form",
       },
     ],
   },
@@ -79,12 +79,12 @@ const Projects = [
     ],
     features: [
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Frontpage of DrypDryp",
+        imagePath: "/drypdryp-frontpage.jpg",
+        caption: "Coffee affiliate site with product sync",
       },
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Product page with price history",
+        imagePath: "/drypdryp-pdp.jpg",
+        caption: "Automatically updates prices of all products daily",
       },
     ],
   },
@@ -105,16 +105,17 @@ const Projects = [
     ],
     features: [
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Frontpage of DrypDryp",
+        imagePath: "/refill-frontpage.jpg",
+        caption: "Multitenancy coffee subscription servive",
       },
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Product page with price history",
+        imagePath: "/refill-pdp.jpg",
+        caption:
+          "Buy or subscribe to coffee from different roasters in Denmark",
       },
     ],
   },
-  {
+  /* {
     subtitle: "Discord",
     link: null,
     title: "Custom Discord Bots",
@@ -131,7 +132,7 @@ const Projects = [
         caption: "Product page with price history",
       },
     ],
-  },
+  }, */
 ];
 
 export default function Page() {
@@ -163,7 +164,6 @@ export default function Page() {
           <ProjectDeck project={project} key={id} />
           {id === 0 ? <Upwork /> : null}
           {id === 1 ? <Stack /> : null}
-          {id === 2 ? <ContactDeck /> : null}
         </>
       ))}
       <ContactDeck />
