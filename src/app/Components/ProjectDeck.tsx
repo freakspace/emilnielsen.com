@@ -5,7 +5,7 @@ import { IProject } from "typings";
 
 const ProjectDeck = ({ project }: { project: IProject }) => {
   return (
-    <section className="p-4 md:p-10 bg-white">
+    <section className="px-4 py-10 md:p-10 bg-white">
       <div className="container mx-auto border border-neutral-300 rounded-3xl p-8 md:p-20 bg-neutral-100 shadow-xl">
         <div className="grid grid-cols-6 gap-8">
           <div className="col-span-6 md:col-span-2">
