@@ -5,9 +5,9 @@ import { IProject } from "typings";
 
 const ProjectDeck = ({ project }: { project: IProject }) => {
   return (
-    <section className="p-4 md:p-10 bg-white">
-      <div className="container mx-auto border border-neutral-300 rounded-3xl p-8 md:p-20 bg-neutral-100 shadow-xl">
-        <div className="grid grid-cols-6 gap-8">
+    <section className="px-4 py-10 md:p-20 bg-white">
+      <div className="container mx-auto grid grid-cols-10 gap-8 bg-neutral-50 rounded-3xl">
+        <div className="border border-neutral-300 rounded-3xl p-8 md:p-20 bg-neutral-100 shadow-xl col-span-10 md:col-span-4">
           <div className="col-span-6 md:col-span-2">
             <div className="flex items-center mb-4">
               <h3 className="text-xl md:text-3xl font-bold text-blue-600">
@@ -46,28 +46,23 @@ const ProjectDeck = ({ project }: { project: IProject }) => {
               </div>
             </div>
           </div>
-          <div className="col-span-6 md:col-span-4 md:flex gap-4">
-            {project.features.map((feature, id) => (
-              <div
+        </div>
+        <div className="flex flex-col md:flex-row col-span-10 md:col-span-6 gap-8 p-3 md:p-8">
+          {project.features.map((feature, id) => (
+            <div
+              key={id}
+              className="rounded-3xl overflow-hidden mb-4 md:mb-0 border border-neutral-200"
+            >
+              <Image
                 key={id}
-                className="rounded-3xl overflow-hidden border bg-white p-4 mb-4 md:mb-0"
-              >
-                <Image
-                  key={id}
-                  src={feature.imagePath}
-                  alt="test"
-                  width={500}
-                  height={500}
-                  className="w-full object-cover"
-                />
-                <div className="p-4 bg-white border-t-2 border-neutral-200">
-                  <p className="text-base font-semibold text-gray-900">
-                    {feature.caption}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+                src={feature.imagePath}
+                alt="test"
+                width={500}
+                height={500}
+                className="w-full object-cover"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

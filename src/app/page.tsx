@@ -10,10 +10,10 @@ export const metadata = {
 };
 
 const HeroProps = {
-  subtitle: "My Portfolio",
-  title: "I Build Projects On Time & Within Budget",
+  subtitle: "Portfolio",
+  title: "I Build Killer Projects On Time & Within Budget",
   description:
-    "I assist business professionals in managing their projects from initiation to closure in a timely manner",
+    "I help businesses increase their profits by building and maintaining their most important web infrastructures.",
   imagePath: "/profilbillede_square.jpg",
 };
 
@@ -23,25 +23,25 @@ const Projects = [
     link: "https://turbotailer.io",
     title: "Connects Stores With ChatGPT",
     description:
-      "A full scale SaaS applications which enables storeowners to connect their store with ChatGPT, enabling their customers to chat with their products",
+      "A SaaS application which enables businessowners to connect their e-commerce store with ChatGPT, enabling their own customers to chat with their inventory.",
     stack: ["Django", "React", "OpenAI", "LangChain", "Tailwind", "Django DRF"],
     features: [
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Frontpage of DrypDryp",
+        imagePath: "/turbotailer-chat.jpg",
+        caption: "ChatGPT Powered E-Commerce Chat",
       },
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Product page with price history",
+        imagePath: "/turbotailer_regiter_onboarding.jpg",
+        caption: "Easy onboarding and integration with ecommerce stores",
       },
     ],
   },
   {
     subtitle: "Bjørn Art",
     link: "https://bjornarts.com",
-    title: "Connects Customers With Artists Overseas",
+    title: "Connects Customers With Artists Oversea",
     description:
-      "A custom built e-commerce site using Django and bootstrap, with a highly dynamic pricing structure, 8 domains and integrated with Stripe",
+      "A custom-built e-commerce site using Django, Bootstrap and Stripe, with a highly dynamic pricing structure as well as multi-language and currencies.",
     stack: [
       "Django",
       "Python",
@@ -50,15 +50,16 @@ const Projects = [
       "Bootstrap",
       "Celery",
       "Docker",
+      "I18N",
     ],
     features: [
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Frontpage",
+        imagePath: "/bjornart-frontpage.jpg",
+        caption: "Customers can order paintings directly artists oversea",
       },
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Frontpage",
+        imagePath: "/bjornart_form.jpg",
+        caption: "A dynamic multi-step product configuration form",
       },
     ],
   },
@@ -67,7 +68,7 @@ const Projects = [
     link: "https://drypdryp.dk",
     title: "Affiliate Site With Daily Price Updates",
     description:
-      "An affiliate site built using Django which automatically syncs products from external souces, as well as updates prices daily.",
+      "An affiliate site built using Django which automatically syncs products from external sources including daily price updates.",
     stack: [
       "Django",
       "Python",
@@ -79,12 +80,12 @@ const Projects = [
     ],
     features: [
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Frontpage of DrypDryp",
+        imagePath: "/drypdryp-frontpage.jpg",
+        caption: "Coffee affiliate site with product sync",
       },
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Product page with price history",
+        imagePath: "/drypdryp-pdp.jpg",
+        caption: "Automatically updates prices of all products daily",
       },
     ],
   },
@@ -93,7 +94,7 @@ const Projects = [
     link: "https://refill.dk",
     title: "Personalized Coffee Subscription",
     description:
-      "A coffee subscription services which connects customers to roasters depending on the customers individual preferences for coffee",
+      "A coffee subscription service which connects customers to roasters based on the customers' coffee-preferences",
     stack: [
       "Django",
       "Python",
@@ -105,16 +106,17 @@ const Projects = [
     ],
     features: [
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Frontpage of DrypDryp",
+        imagePath: "/refill-frontpage.jpg",
+        caption: "Multi-tenancy coffee subscription servive",
       },
       {
-        imagePath: "/bjornart.jpg",
-        caption: "Product page with price history",
+        imagePath: "/refill-pdp.jpg",
+        caption:
+          "Buy or subscribe to coffee from different roasters in Denmark",
       },
     ],
   },
-  {
+  /* {
     subtitle: "Discord",
     link: null,
     title: "Custom Discord Bots",
@@ -131,7 +133,7 @@ const Projects = [
         caption: "Product page with price history",
       },
     ],
-  },
+  }, */
 ];
 
 export default function Page() {
@@ -163,7 +165,6 @@ export default function Page() {
           <ProjectDeck project={project} key={id} />
           {id === 0 ? <Upwork /> : null}
           {id === 1 ? <Stack /> : null}
-          {id === 2 ? <ContactDeck /> : null}
         </>
       ))}
       <ContactDeck />

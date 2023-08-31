@@ -1,6 +1,9 @@
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Analytics from "./Analytics";
+
+import { Suspense } from "react";
 
 export default function RootLayout({
   children,
@@ -9,8 +12,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head />
-      <body id="root">{children}</body>
+      <head></head>
+      <body id="root">
+        <Suspense>
+          <Analytics />
+        </Suspense>
+        {children}
+      </body>
     </html>
   );
 }

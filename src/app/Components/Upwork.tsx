@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Upwork = () => {
   return (
-    <section className="p-4 md:p-10 bg-white">
+    <section className="px-4 py-10 md:p-10 bg-white">
       <div className="container mx-auto border border-neutral-300 rounded-3xl p-8 md:p-20 bg-green-600 shadow-xl md:flex justify-between items-center">
         <div className="md:flex-1 mb-4 md:mb-0">
           <Image
@@ -10,10 +10,10 @@ const Upwork = () => {
             alt="test"
             width={500}
             height={500}
-            className="w-48"
+            className="w-56"
           />
           <div className="flex mt-4">
-            <h3 className="md:text-2xl text-white mr-3 md:mr-6 flex">
+            <h3 className="md:text-xl text-white mr-3 md:mr-6 flex font-bold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -30,7 +30,7 @@ const Upwork = () => {
               </svg>
               Top Rated
             </h3>
-            <h3 className="md:text-2xl text-white flex">
+            <h3 className="md:text-xl text-white flex font-bold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
