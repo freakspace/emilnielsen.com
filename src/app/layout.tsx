@@ -14,9 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <head></head>
       <body id="root">
-        <Suspense>
-          <Analytics />
-        </Suspense>
+        <Analytics />
         {children}
       </body>
     </html>
